@@ -2,6 +2,7 @@
   "name": "idq",
   "version": "1.0.0",
   "description": "Indentificación Digital Queretana",
+  "type": "module",
   "main": "src/index.js",
   "scripts": {
     "start": "nodemon src/index.js",
@@ -23,6 +24,7 @@
   },
   "homepage": "https://github.com/IKIGAI-Studios/IDQ#readme",
   "dependencies": {
+    "cors": "2.8.5",
     "dotenv": "16.3.1",
     "ejs": "3.1.9",
     "express": "4.18.2",
