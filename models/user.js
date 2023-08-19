@@ -52,5 +52,24 @@ export const userModel = model('users', new Schema({
     type: { 
         type: Schema.Types.String,
         required: [true, 'El tipo de usuario es obligatorio']
-    }
+    },
+    docs: [
+        {
+            docType: {
+                type: Schema.Types.String,
+                required: [true, 'El tipo de documento es obligatorio']
+            },
+            file: {
+                type: Schema.Types.String,
+                required: [true, 'El archivo es obligatorio']
+
+            },
+            // get: (doc) => {
+            //     if (!doc) {
+            //         return `${FILE_SERVER}/resources/no-image.png`;
+            //     }
+            //     return `${FILE_SERVER}/resources/${doc}`;
+            // }
+        }
+    ]
 }));
