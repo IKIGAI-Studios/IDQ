@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<!-- Head with links and settings -->
+		<%- include('templates/head')%>
+		<title>IDQ - LOGIN</title>
+	</head>
+	<body>
+		<!-- Form to login -->
+        <form action="../session/login" method="POST">
+            <input type="text" name="user" placeholder="Username">
+            <input type="password" name="password" placeholder="Password">
+            <input type="submit" value="Login">
+        </form>
+
+		<!-- Footer -->
+		<%- include('templates/footer')%>
+	</body>
+</html>
