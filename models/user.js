@@ -3,7 +3,7 @@ import { Schema, model } from "mongoose";
 
 export const userModel = model('users', new Schema({
     idq: {
-        type: Schema.Types.UUID,
+        type: Schema.Types.String,
         required: [true, 'El idq es obligatorio']
     },
     name: {
@@ -45,8 +45,12 @@ export const userModel = model('users', new Schema({
                 required: [true, 'El teléfono es obligatorio']
             },
             idq: {
-                type: Schema.Types.UUID
+                type: Schema.Types.String
             }
         }
-    ]
+    ],
+    type: { 
+        type: Schema.Types.String,
+        required: [true, 'El tipo de usuario es obligatorio']
+    }
 }));
